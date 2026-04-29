@@ -13,12 +13,14 @@ public class GestorEstudiantes {
         return suma / estudiante.getNotas().length; // Error si el array está vacío
     }
 
+
     // Encuentra al estudiante con la mejor nota media
     public static Estudiante encontrarMejorEstudiante(Estudiante[] estudiantes) {
         Estudiante mejor = null;
         double mejorNota = -1;
 
         for (Estudiante estudiante : estudiantes) {
+
             double media = calcularNotaMedia(estudiante); // Posible fallo aquí
             if (media > mejorNota) {
                 mejorNota = media;
