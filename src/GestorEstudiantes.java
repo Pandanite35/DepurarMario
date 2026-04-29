@@ -18,6 +18,9 @@ public class GestorEstudiantes {
 
     // Encuentra al estudiante con la mejor nota media
     public static Estudiante encontrarMejorEstudiante(Estudiante[] estudiantes) {
+        if (estudiantes == null || estudiantes.length == 0) {
+            return null;
+        }
         Estudiante mejor = null;
         double mejorNota = -1;
 
