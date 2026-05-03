@@ -9,11 +9,7 @@ public class Main {
 
         System.out.println("Calculando el mejor estudiante...");
         Estudiante mejor = GestorEstudiantes.encontrarMejorEstudiante(estudiantes);
-        if (mejor != null) {
-            System.out.println("El mejor estudiante es: " + mejor.getNombre());
-        } else {
-            System.out.println("Error: No se pudo determinar el mejor estudiante (la lista está vacía).");
-        }
+        System.out.println("El mejor estudiante es: " + mejor.getNombre());
 
         System.out.println("Guardando resultados...");
         GestorEstudiantes.guardarResultados(estudiantes, "resultados.txt");
