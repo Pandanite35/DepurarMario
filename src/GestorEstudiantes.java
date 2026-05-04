@@ -36,17 +36,6 @@ public class GestorEstudiantes {
     }
 
     // Guarda los resultados en un fichero
-    /*public static void guardarResultados(Estudiante[] estudiantes, String rutaFichero) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaFichero))) {
-            for (Estudiante estudiante : estudiantes) {
-                writer.write("Nombre: " + estudiante.getNombre() + ", Nota Media: " +
-                        calcularNotaMedia(estudiante)); // Posible fallo si calcularNotaMedia lanza una excepción
-                writer.newLine();
-            }
-        } catch (IOException e) {
-            System.out.println("Error al guardar el fichero: " + e.getMessage());
-        }
-    }*/
     public static void guardarResultados(Estudiante[] estudiantes, String rutaFichero) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaFichero))) {
             for (Estudiante estudiante : estudiantes) {
